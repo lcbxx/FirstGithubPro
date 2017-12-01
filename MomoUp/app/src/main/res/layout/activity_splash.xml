@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/img_bottom_logo"
+        android:src="@color/bgSpanish" />
+
+    <ImageView
+        android:id="@+id/img_default_icon"
+        android:layout_above="@+id/img_bottom_logo"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/icon_welcome_top"
+        app:layout_aspectRatio="105%"
+        app:layout_marginBottomPercent="25%"
+        app:layout_widthPercent="50%" />
+
+
+    <ImageView
+        android:id="@+id/img_bottom_logo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_welcome_bottom"
+        app:layout_aspectRatio="350%"
+        app:layout_widthPercent="86%" />
+
+
+    <TextView
+        android:id="@+id/tv_welcome_ad_skip"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_circle_black_50"
+        android:gravity="center"
+        android:text="跳过"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+</android.support.percent.PercentRelativeLayout>
